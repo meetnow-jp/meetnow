@@ -3,6 +3,8 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [master]
+    paths-ignore:
+      - 'config.json'      # URLはAPI経由で直接更新するためビルド不要
   workflow_dispatch:
 
 permissions:

@@ -7,3 +7,4 @@ livekit
 livekit.exe
 livekit.yaml
 .gh-token
+.openai-key

@@ -139,7 +139,7 @@ export default function DeviceSetup({ onConfirm }) {
             {obsMsg && obsState !== 'idle' && (
               <p className={`obs-msg ${obsState}`}>{obsMsg}</p>
             )}
-            <p className="obs-hint">無限鏡を防ぐにはOBS仮想カメラ推奨</p>
+            <p className="obs-hint">OBSがない場合はそのまま「今すぐ参加」を押してください</p>
           </div>
 
           {/* カメラ選択 */}

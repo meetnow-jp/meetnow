@@ -2,7 +2,7 @@
 
 ブラウザだけで使えるビデオ会議アプリ（Teams風）。参加者登録不要、最大200人対応。
 
-**公開URL**: https://nakayama-cmyk.github.io/meetnow/
+**公開URL**: https://meetnow-jp.github.io/meetnow/
 
 ## アーキテクチャ
 

@@ -13,7 +13,7 @@ import { useTranscription } from '../hooks/useTranscription.js';
 async function fetchServerUrl() {
   try {
     const r = await fetch(
-      'https://api.github.com/repos/nakayama-cmyk/meetnow/contents/config.json',
+      'https://api.github.com/repos/meetnow-jp/meetnow/contents/config.json',
       { headers: { Accept: 'application/vnd.github.v3.raw' }, cache: 'no-store' }
     );
     if (r.ok) {

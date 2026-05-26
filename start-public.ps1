@@ -23,12 +23,12 @@ function Update-ConfigJson($wssUrl) {
       "Content-Type"  = "application/json"
     }
     $cur = Invoke-RestMethod `
-      -Uri "https://api.github.com/repos/nakayama-cmyk/meetnow/contents/config.json" `
+      -Uri "https://api.github.com/repos/meetnow-jp/meetnow/contents/config.json" `
       -Headers $h
     $b64  = [Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes("{`"wsUrl`":`"$wssUrl`"}"))
     $body = @{ message = "update server URL"; content = $b64; sha = $cur.sha } | ConvertTo-Json
     Invoke-RestMethod `
-      -Uri "https://api.github.com/repos/nakayama-cmyk/meetnow/contents/config.json" `
+      -Uri "https://api.github.com/repos/meetnow-jp/meetnow/contents/config.json" `
       -Method PUT -Headers $h -Body $body | Out-Null
     Write-Host "    [config.json 更新] $wssUrl" -ForegroundColor Cyan
   } catch {
@@ -116,7 +116,7 @@ Update-ConfigJson $currentUrl
 Write-Host ""
 Write-Host "=============================================" -ForegroundColor Cyan
 Write-Host "  起動完了！" -ForegroundColor Green
-Write-Host "  https://nakayama-cmyk.github.io/meetnow/" -ForegroundColor Green
+Write-Host "  https://meetnow-jp.github.io/meetnow/" -ForegroundColor Green
 Write-Host "  ★ このウィンドウは閉じないでください ★" -ForegroundColor Yellow
 Write-Host "  （トンネルが切れたら自動で再接続します）" -ForegroundColor Gray
 Write-Host "=============================================" -ForegroundColor Cyan

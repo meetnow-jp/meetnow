@@ -98,4 +98,4 @@ cd client && npm run build
 
 - `.gh-token` ファイルは gitignore 済み。コミットしない
 - `livekit-config.yaml` の API シークレットは32文字以上必要
-- GitHub Pages の URL: `https://nakayama-cmyk.github.io/meetnow/`
+- GitHub Pages の URL: `https://meetnow-jp.github.io/meetnow/`
